@@ -1,0 +1,25 @@
+{
+    "name": "@banqinghe/clone",
+    "version": "0.1.0",
+    "description": "For study. From https://github.com/jsmini/clone",
+    "main": "index.js",
+    "module": "index.esm.js",
+    "type": "module",
+    "scripts": {
+        "build:cjs": "rollup -c config/rollup.config.js",
+        "build:esm": "rollup -c config/rollup.config.esm.js",
+        "build:aio": "rollup -c config/rollup.config.aio.js",
+        "build": "pnpm run build:cjs && pnpm run build:esm && pnpm run build:aio"
+    },
+    "author": "banqinghe",
+    "license": "MIT",
+    "dependencies": {
+        "@jsmini/type": "^0.11.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "rollup": "^4.19.0",
+        "webpack": "^5.93.0",
+        "webpack-cli": "^5.1.4"
+    }
+}
