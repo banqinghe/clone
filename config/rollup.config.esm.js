@@ -1,11 +1,12 @@
 import { defineConfig } from 'rollup';
-import { banner } from './rollup.js';
+import { banner, getCompiler } from './rollup.js';
 
 export default defineConfig({
-    input: 'index.js',
+    input: 'src/index.js',
     output: {
         file: 'dist/index.esm.js',
         format: 'es',
         banner,
     },
+    plugins: [getCompiler()],
 });

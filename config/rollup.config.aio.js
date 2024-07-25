@@ -1,9 +1,10 @@
 import { defineConfig } from 'rollup';
+import commonjs from '@rollup/plugin-commonjs';
 import nodeResolve from '@rollup/plugin-node-resolve';
-import { banner } from './rollup.js';
+import { banner, getCompiler } from './rollup.js';
 
 export default defineConfig({
-    input: 'index.js',
+    input: 'src/index.js',
     output: {
         file: 'dist/index.aio.js',
         format: 'umd',
@@ -11,8 +12,8 @@ export default defineConfig({
         banner,
     },
     plugins: [
-        nodeResolve({
-            extensions: ['.js'],
-        }),
+        getCompiler(),
+        nodeResolve({}),
+        commonjs(),
     ],
 });

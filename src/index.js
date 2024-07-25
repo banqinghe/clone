@@ -1,4 +1,4 @@
-import { type } from '@jsmini/type';
+import type from './type';
 
 export function clone(source) {
     const t = type(source);
@@ -24,8 +24,3 @@ export function clone(source) {
 
     return target;
 }
-
-// const a = { name: 'a' };
-// b = clone(a);
-// b.name = 'b';
-// console.log({ a: JSON.stringify(a), b: JSON.stringify(b) });
