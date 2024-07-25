@@ -5,6 +5,9 @@
     "main": "index.js",
     "module": "index.esm.js",
     "type": "module",
+    "files": [
+        "/dist"
+    ],
     "scripts": {
         "build:cjs": "rollup -c config/rollup.config.js",
         "build:esm": "rollup -c config/rollup.config.esm.js",
