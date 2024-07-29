@@ -1,10 +1,11 @@
-const path = require('path');
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-module.exports = {
-    entry: './index.js',
+export default {
+    entry: './src/index.js',
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: join(dirname(fileURLToPath(import.meta.url)), 'dist'),
     },
     mode: 'none',
     resolve: {

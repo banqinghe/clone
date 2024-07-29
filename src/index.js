@@ -11,7 +11,7 @@ export function clone(source) {
     if (t === 'object') {
         target = {};
         for (const i in source) {
-            if (source.hasOwnProperty(i)) {
+            if (Object.prototype.hasOwnProperty.call(source, i)) {
                 target[i] = clone(source[i]);
             }
         }

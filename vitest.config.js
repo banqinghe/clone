@@ -6,6 +6,8 @@ export default defineConfig({
             provider: 'istanbul',
             include: [
                 'src/**',
+                'test/**',
+                'config/**',
             ],
             reporter: ['text', 'html'],
             enabled: true,
