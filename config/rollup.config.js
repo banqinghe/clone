@@ -6,7 +6,7 @@ export default defineConfig({
     output: {
         file: 'dist/index.js',
         format: 'cjs',
-        banner
+        banner,
     },
     plugins: [getCompiler()],
 });

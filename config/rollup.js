@@ -29,8 +29,8 @@ export function getCompiler(opt) {
                 '@babel/plugin-transform-runtime',
                 {
                     corejs: '3',
-                }
-            ]
+                },
+            ],
         ],
         exclude: 'node_modules/**',
     });
