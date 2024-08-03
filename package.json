@@ -5,6 +5,9 @@
     "main": "index.js",
     "module": "index.esm.js",
     "type": "module",
+    "author": "banqinghe",
+    "license": "MIT",
+    "packageManager": "pnpm@9.6.0",
     "files": [
         "/dist"
     ],
@@ -20,8 +23,6 @@
         "prepare": "husky",
         "lint": "eslint"
     },
-    "author": "banqinghe",
-    "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.24.9",
         "@babel/plugin-transform-runtime": "^7.24.7",
