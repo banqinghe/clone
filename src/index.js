@@ -1,6 +1,6 @@
 import type from './type';
 
-export function clone(source) {
+export default function clone(source) {
     const t = type(source);
     if (t !== 'object' && t !== 'array') {
         return source;

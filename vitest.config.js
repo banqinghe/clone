@@ -7,7 +7,6 @@ export default defineConfig({
             include: [
                 'src/**',
                 'test/**',
-                // 'config/**',
             ],
             reporter: ['text', 'html'],
             enabled: true,
