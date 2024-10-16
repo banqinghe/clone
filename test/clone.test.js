@@ -1,5 +1,5 @@
 import { expect, describe, it } from 'vitest';
-import clone from '../src/index';
+import clone from '../src/clone';
 
 describe('function clone', () => {
     describe('param data', () => {

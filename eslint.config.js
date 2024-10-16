@@ -8,6 +8,7 @@ export default [
             indent: 4,
             jsx: false,
             semi: true,
+            braceStyle: '1tbs',
         }),
     },
     {

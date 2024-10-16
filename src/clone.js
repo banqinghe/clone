@@ -15,8 +15,7 @@ export default function clone(source) {
                 target[i] = clone(source[i]);
             }
         }
-    }
-    else {
+    } else {
         target = [];
         for (const i of source) {
             target.push(clone(i));
